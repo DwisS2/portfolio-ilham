@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 // halaman index
-app.get("/index", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index", { layout: "index.ejs", title: "Halaman Index" });
 });
 // halaman about
