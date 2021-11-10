@@ -43,6 +43,9 @@ app.get("/project-patapangzone", (req, res) => {
 app.get("/project-wows", (req, res) => {
   res.render("project-wows", { layout: "layouts/main-layout", title: "Halaman Wows Tracker" });
 });
+app.get("/project-xtime", (req, res) => {
+  res.render("project-xtime", { layout: "layouts/main-layout", title: "Halaman XTime" });
+});
 // halaman projects
 app.get("/projects", (req, res) => {
   res.render("projects", { layout: "layouts/main-layout", title: "Halaman Works" });
